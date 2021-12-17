@@ -1,0 +1,37 @@
+{
+  "datasets": {
+    "orders": {
+      "documentation": "Consolidated view of the company orders",
+      "platform": "ovh",
+      "inputs": [
+        "raw-orders",
+        "users"
+      ],
+      "products": [
+        "orders"
+      ]
+    },
+    "users": {
+      "platform": "ovh",
+      "documentation": "copy of auth system in the OVH data platform",
+      "inputs": [
+        "auth-users"
+      ],
+      "products": [
+        "orders",
+        "users"
+      ]
+    },
+    "raw-orders": {
+      "platform": "aws",
+      "documentation": "Raw files of orders in the ecommerce system"
+    },
+    "auth-users": {
+      "platform": "auth",
+      "documentation": "users coming in the authentication system",
+      "products": [
+        "users"
+      ]
+    }
+  }
+}
