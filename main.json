@@ -53,6 +53,16 @@
         "products"
       ]
     },
+    "products-2021": {
+      "inputs": [
+        "products"
+      ],
+      "platform": "ovh",
+      "documentation": "Products of 2021",
+      "products": [
+        "products"
+      ]
+    },
     "highest-orders": {
       "documentation": "Top 1000 orders",
       "inputs": [
