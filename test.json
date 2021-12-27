@@ -1,5 +1,13 @@
 {
   "datasets": {
+    "files": {
+      "documentation": "Raw files used by all the others datasets",
+      "products": [
+        "users",
+        "orders"
+      ],
+      "platform": "on-prem"
+    },
     "orders": {
       "documentation": "Consolidated view of the company orders",
       "platform": "ovh",
@@ -24,13 +32,19 @@
     },
     "raw-orders": {
       "platform": "aws",
-      "documentation": "Raw files of orders in the ecommerce system"
+      "documentation": "Raw files of orders in the ecommerce system",
+      "inputs": [
+        "files"
+      ]
     },
     "auth-users": {
-      "platform": "auth",
+      "platform": "auth-platform",
       "documentation": "users coming in the authentication system",
       "products": [
         "users"
+      ],
+      "inputs": [
+        "files"
       ]
     }
   }
